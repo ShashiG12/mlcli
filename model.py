@@ -69,6 +69,8 @@ class mlModel:
             self.linearModel()
         if self.modelType == 'logistic':
             self.logisticModel()
+        if self.modelType == 'svm':
+            self.svmModel()
 
     def linearModel(self):
         model = LinearRegression()
@@ -81,6 +83,9 @@ class mlModel:
         model.fit(self.X_train, self.y_train)
         print(f'Accuracy: {model.score(self.X_test, self.y_test)}')
         self.plot(model)
+
+    def svmModel(self):
+
 
     # scatter plot the data with predictions
     def plot(self, model):
