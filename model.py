@@ -3,6 +3,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.linear_model import LogisticRegression
 import matplotlib.pyplot as plt
+from sklearn.svm import SVC
 
 
 class mlModel:
@@ -85,7 +86,10 @@ class mlModel:
         self.plot(model)
 
     def svmModel(self):
-
+        model = SVC(gamma='auto')
+        model.fit(self.X_train, self.y_train)
+        print(f'Accuracy: {model.score(self.X_test, self.y_test)}')
+        self.plot(model)
 
     # scatter plot the data with predictions
     def plot(self, model):
