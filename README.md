@@ -5,8 +5,6 @@ Command line application for fast machine learning model generation.
 
 usage: main.py [-h] [-p] [-s] [-c COLUMN] [-t TEST] [--predict] data [{linear,logistic,svm}]
 
-CLI for Machine Learning Model generation
-
 positional arguments:
 
   data                  csv file containing data
