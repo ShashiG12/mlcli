@@ -3,4 +3,4 @@
 Command line application for fast machine learning model generation.
 
 
-![Screenshot](mlcliSS.png)
+![Screenshot](mlcli/images/mlcliSS.png)
